@@ -1,0 +1,123 @@
+/**
+ * [EXPERIMENTAL]
+ * These are to make the header background slightly more interesting.
+ */
+
+.header {
+  background-image: linear-gradient(to bottom, #00000007 0%, #ffffff0d 100%);
+}
+
+[data-theme="dark"] .header {
+  background: radial-gradient(
+    circle at top right,
+    #eeeeee0f 10%,
+    var(--color-bg-primary) 50%
+  );
+}
+
+/**
+ * Header container
+ *
+ * Splits the header into to halves. On the left there is text/information,
+ * on the right should be an image or something to demonstrate what the rest
+ * of the page is going to be about.
+ *
+ * HEADER             |   [         ]
+ * Subheading         |   [  IMAGE  ]
+ * [call to action]   |   [         ]
+ */
+
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin: 6rem 2.5rem auto 2.5rem;
+  /* Subtract from min-height by the amount we add in margin-top */
+  min-height: calc(100vh - 6rem);
+
+  border-bottom: 1px solid var(--color-border-primary);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/**
+ * Organizing the text information on the left half of the header.
+ */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.subheading {
+  color: var(--color-text-secondary);
+  line-height: 2rem;
+}
+
+/**
+ * The call to action at the bottom of the text. It is an <a> tag that
+ * redirects you to the main part of the website.
+ *
+ * By default, the call to action is formatted similarly to the rest
+ * of the header text; by adding `button` to the class list, the style
+ * inverts and uses the text color as the background, and the background
+ * color for the text.
+ */
+
+.action {
+  color: var(--color-text-primary);
+  font-weight: bold;
+  text-decoration: none;
+
+  width: fit-content;
+
+  /**
+    * The arrow is a small element with borders on the bottom and right edges.
+    * Rotating the element 45 degrees makes it look like an arrow.
+    */
+
+  > .arrow {
+    border: solid var(--color-text-primary);
+    border-width: 0 3px 3px 0;
+
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+
+    &.right {
+      transform: rotate(315deg);
+      bottom: 1px;
+    }
+  }
+
+  &.button {
+    background-color: var(--color-text-primary);
+    border: 1px solid var(--color-bg-tertiary);
+    border-radius: 0.5rem;
+    color: var(--color-bg-primary);
+
+    padding: 0.75rem 1rem;
+
+    > .arrow {
+      border-color: var(--color-bg-primary);
+    }
+  }
+}
+
+.cards {
+  align-items: center;
+}

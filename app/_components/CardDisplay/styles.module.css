@@ -1,0 +1,21 @@
+.container {
+  top: calc(var(--size-nav-height) + 4rem);
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 9.5rem;
+  justify-items: center;
+  padding: 1rem;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+  .display {
+    grid-template-columns: 1fr;
+  }
+}

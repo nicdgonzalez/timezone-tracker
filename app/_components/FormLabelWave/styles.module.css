@@ -1,0 +1,41 @@
+.wave {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-border-primary);
+  background: transparent;
+  color: var(--color-text-primary);
+}
+
+.label {
+  color: var(--color-text-tertiary);
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  display: flex;
+}
+
+.char {
+  transition: 0.2s ease all;
+  transition-delay: calc(var(--index) * 0.05s);
+}
+
+.wave .input:focus {
+  outline: none;
+}
+
+.wave > .input:focus ~ label > .char,
+.wave > .input:valid ~ label > .char {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: var(--color-text-primary);
+}

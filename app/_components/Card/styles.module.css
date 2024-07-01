@@ -1,0 +1,99 @@
+[data-theme="light"] .card {
+  --color-card-bg-primary: hsla(0, 0%, 90%, 0.15);
+  --color-card-bg-secondary: var(--color-card-bg-primary);
+}
+
+[data-theme="dark"] .card {
+  --color-card-bg-primary: hsla(0, 0%, 70%, 0.05);
+  --color-card-bg-secondary: var(--color-card-bg-primary);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+  box-shadow: hsla(0, 0%, 15%, 0.1) 0px 2px 8px 0px;
+}
+
+.color {
+  width: 0.5rem;
+  border-width: 1px 0 1px 1px;
+  border-style: solid none solid solid;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border-color: var(--color-border-primary);
+  height: 7.5rem;
+  padding: 0.5rem 0;
+}
+
+.main {
+  background-color: var(--color-card-bg-primary);
+  border-width: 1px 1px 1px 0;
+  border-style: solid solid solid none;
+  border-color: var(--color-border-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+
+  display: grid;
+  grid-template-columns: 3fr 0.5fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: 7.5rem;
+  padding: 0.5rem 1.5rem;
+  width: 15rem;
+}
+
+.group {
+  display: flex;
+  column-gap: 0.5rem;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  align-self: center;
+}
+
+.label {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.timezone {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  font-size: smaller;
+  border: 1px solid var(--color-border-primary);
+  width: fit-content;
+  height: fit-content;
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--color-text-tertiary);
+  align-self: center;
+}
+
+.timestamp {
+  background-color: var(--color-card-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: 5px;
+
+  display: flex;
+  align-self: center;
+  grid-column: 1 / column2-end;
+  grid-row-start: 3;
+  justify-content: center;
+  justify-self: center;
+  min-height: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.close {
+  rotate: 45deg;
+  cursor: pointer;
+  align-content: center;
+  width: fit-content;
+  justify-self: end;
+  font-size: x-large;
+}

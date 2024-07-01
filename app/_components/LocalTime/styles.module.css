@@ -1,0 +1,14 @@
+.section {
+  text-align: center;
+
+  inset: var(--size-nav-height) 0 auto 0;
+}
+
+.time {
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 2em;
+}
