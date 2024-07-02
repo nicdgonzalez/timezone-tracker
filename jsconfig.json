@@ -2,6 +2,35 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"]
-    }
-  }
+    },
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+    ],
+    "allowJs": true,
+    // "checkJs": true,  // Not yet...
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next",
+      }
+    ],
+  },
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
