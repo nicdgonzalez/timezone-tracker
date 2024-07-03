@@ -6,7 +6,7 @@
     "lib": [
       "DOM",
       "DOM.Iterable",
-      "ESNext",
+      "ESNext"
     ],
     "allowJs": true,
     // "checkJs": true,  // Not yet...
@@ -22,13 +22,13 @@
     "jsx": "preserve",
     "plugins": [
       {
-        "name": "next",
+        "name": "next"
       }
-    ],
+    ]
   },
   "include": [
     "**/*.js",
-    "**/*.jsx",
+    "**/*.jsx"
   ],
   "exclude": [
     "node_modules"
