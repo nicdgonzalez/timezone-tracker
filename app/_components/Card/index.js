@@ -1,3 +1,5 @@
+"use client";
+
 import { Roboto_Mono } from "next/font/google";
 
 import styles from "./styles.module.css";
@@ -37,6 +39,7 @@ export function Card({
           id={`card-${index}`}
           data-timezone={timezone}
           className={`${styles.timestamp} ${mono.className}`}
+          suppressHydrationWarning
         >
           {dateTime}
         </p>
