@@ -15,46 +15,51 @@ function updateData(data) {
 const dataDefault = [
   {
     name: "Rue",
-    label: "Moderator",
+    label: "Stinky Moderator",
     timezone: "Asia/Manila",
     color: "#d8df97",
   },
   {
     name: "Asahi",
-    label: "Moderator",
+    label: "Moderator (oui oui)",
     timezone: "Europe/Paris",
     color: "#ffcee9",
   },
   {
     name: "Taiyou",
-    label: "Server Owner",
+    label: "LET'S GO CATBOYSSS",
     timezone: "US/Eastern",
     color: "#424964",
-    // color: "#7f1938",
   },
   {
     name: "Lulu",
-    label: "Server Owner",
+    label: "Lovely Moderator",
     timezone: "US/Eastern",
     color: "#f6eee4",
   },
   {
     name: "Nic",
-    label: "Moderator",
+    label: "Superior Moderator",
     timezone: "US/Eastern",
     color: "#14605c",
   },
   {
     name: "Sonny",
-    label: "Moderator",
+    label: "Moderator /pf",
     timezone: "US/Eastern",
     color: "#6c0501",
   },
   {
     name: "Aria",
-    label: "Moderator",
+    label: "\"nice melons\" Moderator",
     timezone: "US/Central",
     color: "#7b3e58",
+  },
+  {
+    name: "Aliyss",
+    label: "Nic's Friend Alice (Follow4Follow-er)",
+    timezone: "CET",
+    color: "#9b59b6",
   },
 ];
 
