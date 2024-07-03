@@ -14,7 +14,7 @@ import { Card } from "@/app/_components/Card";
 import { CardCreateForm } from "@/app/_components/CardCreateForm";
 import { LocalTime } from "../LocalTime";
 import { CardCreateButton } from "../CardCreateButton";
-import { cardsDefault, createCard, getCards, deleteCard } from "@/lib/cards";
+import { cardsDefault, createCard, getCards, deleteCard } from "@/app/_lib/cards";
 
 export function CardDisplay() {
   const [_count, setCount] = useState(cardsDefault.length);

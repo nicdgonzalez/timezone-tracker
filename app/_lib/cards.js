@@ -18,45 +18,51 @@
 export const cardsDefault = [
   {
     name: "Rue",
-    label: "Moderator",
+    label: "Stinky Moderator",
     timezone: "Asia/Manila",
     color: "#d8df97",
   },
   {
     name: "Asahi",
-    label: "Moderator",
+    label: "Moderator (oui oui)",
     timezone: "Europe/Paris",
     color: "#ffcee9",
   },
   {
     name: "Taiyou",
-    label: "Moderator",
+    label: "LET'S GO CATBOYSSS",
     timezone: "US/Eastern",
     color: "#424964",
   },
   {
     name: "Lulu",
-    label: "Moderator",
+    label: "Lovely Moderator",
     timezone: "US/Eastern",
     color: "#f6eee4",
   },
   {
     name: "Nic",
-    label: "Moderator",
+    label: "Superior Moderator",
     timezone: "US/Eastern",
     color: "#14605c",
   },
   {
     name: "Sonny",
-    label: "Moderator",
+    label: "Moderator /pf",
     timezone: "US/Eastern",
     color: "#6c0501",
   },
   {
     name: "Aria",
-    label: "Moderator",
+    label: '"nice melons" Moderator',
     timezone: "US/Central",
     color: "#7b3e58",
+  },
+  {
+    name: "Aliyss",
+    label: "Nic's Friend Alice",
+    timezone: "CET",
+    color: "#9b59b6",
   },
 ];
 
@@ -74,7 +80,7 @@ export function updateCards(data) {
 export function getCards() {
   const data = window.localStorage.getItem("cards");
 
-  if (data === undefined) {
+  if (data === null) {
     updateCards(cardsDefault);
     return cardsDefault;
   }
