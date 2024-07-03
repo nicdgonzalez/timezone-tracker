@@ -1,3 +1,5 @@
+"use client";
+
 import { Roboto_Mono } from "next/font/google";
 
 import styles from "./styles.module.css";
