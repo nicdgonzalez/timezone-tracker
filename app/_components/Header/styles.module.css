@@ -39,7 +39,7 @@
   border-bottom: 1px solid var(--color-border-primary);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 770px) {
   .container {
     grid-template-columns: auto;
     grid-template-rows: repeat(2, 1fr);

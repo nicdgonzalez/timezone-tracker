@@ -9,6 +9,12 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 770px) {
+  .time {
+    font-size: 4em;
+  }
+}
+
 .date {
   font-size: 2em;
 }
