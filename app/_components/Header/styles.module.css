@@ -86,9 +86,9 @@
   width: fit-content;
 
   /**
-    * The arrow is a small element with borders on the bottom and right edges.
-    * Rotating the element 45 degrees makes it look like an arrow.
-    */
+   * The arrow is a small element with borders on the bottom and right edges.
+   * Rotating the element 45 degrees makes it look like an arrow.
+   */
 
   > .arrow {
     border: solid var(--color-text-primary);

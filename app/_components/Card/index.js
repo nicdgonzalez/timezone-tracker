@@ -14,7 +14,6 @@ const mono = Roboto_Mono({
 export function Card({
   index,
   name,
-  label = "Friend",
   timezone,
   color,
   onCardDelete,
@@ -25,7 +24,8 @@ export function Card({
       <div
         className={styles.color}
         style={{ backgroundColor: `${color}` }}
-      ></div>
+      >
+      </div>
       <div className={styles.main}>
         <div className={styles.close} onClick={onCardDelete}>
           +
@@ -34,7 +34,6 @@ export function Card({
           <h1 className={styles.name}>{name}</h1>
           <h2 className={styles.timezone}>{timezoneToAbbrev[timezone]}</h2>
         </div>
-        <h2 className={styles.label}>{label}</h2>
         <p
           id={`card-${index}`}
           data-timezone={timezone}

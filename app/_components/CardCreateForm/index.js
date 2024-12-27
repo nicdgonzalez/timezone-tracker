@@ -43,9 +43,6 @@ export function CardCreateForm({ onSubmit }) {
                 <FormLabelWave type="text" id="form-card-name" text="Name" />
               </li>
               <li>
-                <FormLabelWave type="text" id="form-card-label" text="Label" />
-              </li>
-              <li>
                 <FormLabelWave
                   type="text"
                   id="form-card-timezone"

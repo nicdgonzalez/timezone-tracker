@@ -1,4 +1,10 @@
-@import "@/public/css/reset.css";
+/* @import "@/public/css/reset.css"; */
+
+/* Messes with the size of the cards, causing boxes to overlap.
+I will fix this when I rewrite the project.
+@tailwind base; */
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --color-bg-primary: #fff;

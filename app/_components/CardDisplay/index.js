@@ -14,52 +14,9 @@ function updateData(data) {
 
 const dataDefault = [
   {
-    name: "Rue",
-    label: "Stinky Moderator",
-    timezone: "Asia/Manila",
-    color: "#d8df97",
-  },
-  {
-    name: "Asahi",
-    label: "Moderator (oui oui)",
-    timezone: "Europe/Paris",
-    color: "#ffcee9",
-  },
-  {
-    name: "Taiyou",
-    label: "LET'S GO CATBOYSSS",
-    timezone: "US/Eastern",
-    color: "#424964",
-  },
-  {
-    name: "Lulu",
-    label: "Lovely Moderator",
-    timezone: "US/Eastern",
-    color: "#f6eee4",
-  },
-  {
     name: "Nic",
-    label: "Superior Moderator",
     timezone: "US/Eastern",
     color: "#14605c",
-  },
-  {
-    name: "Sonny",
-    label: "Moderator /pf",
-    timezone: "US/Eastern",
-    color: "#6c0501",
-  },
-  {
-    name: "Aria",
-    label: "\"nice melons\" Moderator",
-    timezone: "US/Central",
-    color: "#7b3e58",
-  },
-  {
-    name: "Aliyss",
-    label: "Nic's Friend Alice (Follow4Follow-er)",
-    timezone: "CET",
-    color: "#9b59b6",
   },
 ];
 
@@ -76,13 +33,11 @@ export function CardDisplay() {
     event.preventDefault();
 
     const name = document.getElementById("form-card-name");
-    const label = document.getElementById("form-card-label");
     const timezone = document.getElementById("form-card-timezone");
     const color = document.getElementById("form-card-color");
 
     data.push({
       name: name.value,
-      label: label.value,
       timezone: timezone.value,
       color: color.value,
     });
@@ -90,7 +45,6 @@ export function CardDisplay() {
     saveData(data);
 
     name.value = "";
-    label.value = "";
     timezone.value = "";
     color.value = "";
 
@@ -132,7 +86,6 @@ export function CardDisplay() {
         key={i}
         index={i}
         name={e.name}
-        label={e.label}
         timezone={e.timezone}
         color={e.color}
         onCardDelete={onCardDelete}
